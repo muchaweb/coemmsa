@@ -1,0 +1,191 @@
+/**
+* ----------------------------------------------------------
+* Navigation styles.
+* ----------------------------------------------------------
+**/
+
+#main-nav {
+  background-color: $white;
+  border: 1px solid $gray--light;
+  border-bottom: none;
+  padding: 0;
+  @include border-radius(0.25em);
+  text-align: justify;
+}
+
+.menuzord-brand,
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.menuzord-brand {
+  border-bottom: 3px solid $gray--light;
+  border-right: 1px solid $gray--light;
+  color: $gray--dark;
+  margin: 0;
+  padding: 0.23em 0;
+  text-align: center;
+  width: 5%;
+  &:hover, &.active {
+    border-bottom-color: $stormcloud--light;
+    color: $stormcloud--light;
+  }
+}
+
+.menu {
+  min-height: 40px;
+  text-align: justify;
+  width: 95%;
+  > .menu__item {
+    border-bottom: 3px solid $gray--light;
+    border-right: 1px solid $gray--light;
+    display: block;
+    float: left;
+    line-height: 3em;
+    text-align: center;
+    width: 12.5%;
+    @include box-sizing(border-box);
+    @include transition(all, 0.33s);
+    &:hover, &.active {
+      border-bottom: 3px solid $stormcloud--light;
+      color: $gray--light;
+      > a {
+        color: $gray--dark;
+      }
+    }
+    &.menu__item--last {
+      border-right: none;
+      line-height: 2.1em;
+      position: relative;
+      width: 25%;
+    }
+    > a {
+      padding: 0;
+      position: relative;
+      .indicator {
+        font-size: 20px;
+        margin-left: 0.5em;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+  ul.dropdown {
+    border: 1px solid $gray--light;
+    margin-top: 2px;
+    > .dropdown__item {
+      border-bottom: 1px solid $gray--light;
+      height: auto;
+      overflow: hidden;
+      text-align: left;
+
+      &.dropdown__item--last {
+        border-bottom: 2px solid $gray--light;
+      }
+      > a {
+        font-size: $base__font--size * 0.9;
+        padding: 0 0 0 2em;
+      }
+    }
+  }
+}
+
+.site-search {
+  .site-search__input {
+    border: none;
+    color: $gray--dark;
+    display: block;
+    font-size: 13px;
+    outline: none;
+    padding: 0.5em;
+    position: relative;
+    width: 100%;
+    @include box-sizing(border-box);
+  }
+  .site-search__submit {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0.5em;
+    top: 0.35em;
+  }
+}
+
+@media (max-width: 800px) {
+  #main-nav {
+    border-bottom: 3px solid $gray--light;
+    text-align: left;
+    .menu {
+      border-top: 1px solid $gray--light;
+      > .menu__item {
+        display: inline-block;
+        float: none;
+        border-right: none;
+        width: 100%;
+        border-bottom-width: 1px;
+        text-align: left;
+        .indicator {
+          top: 0;
+          margin: 0;
+          width: 40px;
+          height: 34px;
+          line-height: 34px;
+          display: block;
+          float: right;
+          border-left: 1px solid $gray--light;
+        }
+        > a {
+          padding: 0 0 0 1.5em;
+          margin: 0;
+          line-height: 34px;
+          border-bottom: none;
+        }
+        .dropdown {
+          > .dropdown__item {
+            &:first-child {
+              > a {
+                border-top: 1px solid $gray--light;
+              }
+            }
+            > a {
+              padding-left: 2em;
+            }
+          }
+        }
+      }
+    }
+    .showhide,
+    .menuzord-brand {
+      margin: 0;
+      padding: 0;
+      width: 40px;
+      height: 34px;
+      text-align: center;
+    }
+    .menuzord-brand {
+      font-size: 24px;
+      line-height: 34px;
+      border-right: 1px solid $gray--light;
+      border-bottom-width: 0;
+    }
+    .showhide {
+      border-left: 1px solid $gray--light;
+      &:hover > em {
+        background-color: $stormcloud--light;
+      }
+      em {
+        display: block;
+        position: relative;
+        width: 20px;
+        margin: 3px auto;
+        vertical-align: middle;
+        line-height: 0px;
+        float: none;
+        &:first-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

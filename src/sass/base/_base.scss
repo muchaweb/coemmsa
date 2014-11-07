@@ -1,0 +1,20 @@
+/**
+* ----------------------------------------------------------
+* Base styles.
+* ----------------------------------------------------------
+**/
+
+body {
+  font-family: $base__font--sans;
+  line-height: $base__font--height;
+  color: $color__text;
+}
+
+@include sticky-footer(240px, "#root", "#root__footer", "#footer");
+
+a {
+  @include link-colors($stormcloud, $stormcloud--light,$stormcloud--light, $stormcloud--light );
+}
+
+@import "icons/*.png";
+@include all-icons-sprites;

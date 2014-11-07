@@ -1,0 +1,70 @@
+/**
+* ----------------------------------------------------------
+* Footer Styles
+* ----------------------------------------------------------
+**/
+
+#footer {
+  margin-top: $margin__general / 2;
+  .media {
+    margin-bottom: $margin__general/2;
+    text-align: center;
+    .media__title {
+      border-bottom: 1px solid $gray--light;
+      color: $stormcloud;
+      font-size: $base__font--size;
+      margin: 0 0 1em 0;
+      padding-bottom: 0.5em;
+      text-transform: uppercase;
+    }
+    a {
+      color: $color__text;
+    }
+    .media__icon {
+      font-size: 24px;
+      margin-bottom: 0.5em;
+    }
+  }
+  ul.social {
+    text-align: center;
+    width: 100%;
+    .social__item {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .social__link {
+      color: white;
+      display: block;
+      font-size: 18px;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      width: 2em;
+      @include border-radius(50%);
+      &.social__link--facebook {
+        background: $color__facebook;
+      }
+      &.social__link--google {
+        background: $color__google;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+      &.social__link--linkedin {
+        background: $color__linkedin;
+      }
+    }
+  }
+  .bottom-bar {
+    background: $stormcloud;
+    padding: 1em 0;
+    text-align: center;
+    * {
+      color: white;
+      font-size: $base__font--size * 0.8;
+      font-weight: normal;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  }
+}
+

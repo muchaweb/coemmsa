@@ -1,0 +1,44 @@
+/**
+* ----------------------------------------------------------
+* Settings.
+* ----------------------------------------------------------
+**/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+//* Typography */
+$base__font--size           : 16px;
+$base__font--sans           : 'Lato', sans-serif;
+$base__font--serif          : Georgia, serif;
+$base__font--height         : $base__font--size * 1.5;
+
+
+//* Color scheme */
+$stormcloud                 : #2097a5;
+$stormcloud--light          : #56b1bb;
+$white                      : #eeeeee;
+$gray--dark                 : #8f8f8f;
+$gray--light                : #d5d5d5;
+
+//* Colors */
+$color__link                : #4183C4;
+$color__link--hover         : #333;
+$color__text                : #4d4d4d;
+$color__text--light         : #777;
+$color__hr                  : #EEE;
+
+//* Colors social media */
+$color__facebook            : #3B5998;
+$color__twitter             : #2EB3E5;
+$color__google              : #DD4B39;
+$color__pinterest           : #CB2027;
+$color__linkedin           : #0977B5;
+
+
+$color__validation--error   : #FF4C4C;
+$color__validation--success : #7CC576;
+
+
+//* Positioning */
+$margin__multiplier         : 2;
+$margin__general            : $base__font--height * $margin__multiplier;

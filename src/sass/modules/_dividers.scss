@@ -1,0 +1,14 @@
+/**
+* ----------------------------------------------------------
+* Dividers.
+* ----------------------------------------------------------
+**/
+
+hr {
+  display: block;
+  height: 1px;
+  margin: $margin__general 0;
+
+  border: none;
+  background-color: $color__hr;
+}

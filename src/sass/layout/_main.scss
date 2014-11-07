@@ -1,0 +1,82 @@
+/**
+* ----------------------------------------------------------
+* Main styles
+* ----------------------------------------------------------
+**/
+
+.slider-section {
+  margin: $margin__general/2 0;
+}
+
+#width-slider {
+  background: $stormcloud;
+  width: 100%;
+  &.rsMinW {
+    .rsOverflow, .rsSlide, .rsVideoFrameHolder, .rsThumbs {
+      background: $stormcloud;
+    }
+  }
+}
+
+.why-content {
+  margin: $margin__general/2 0;
+}
+
+.our-brands {
+  margin-bottom: $margin__general * 0.5;
+}
+
+.everslider {
+  margin: 0;
+  padding: 0;
+}
+
+.featured-slider {
+  margin: 0;
+  padding: 0;
+  .es-navigation {
+    bottom: auto;
+    left: 0;
+    top: 0;
+    > a.es-prev,
+    > a.es-next {
+      background: $stormcloud;
+      color: white;
+      top: 0;
+      margin-top: 0;
+      text-align: center;
+      span.alt-arrow {
+        background: none;
+        font-size: 20px;
+        height: 1em;
+        line-height: 1em;
+        text-indent: 0;
+        width: 1em;
+        @inclue box-sizing(border-box);
+      }
+    }
+  }
+  .es-slides > li {
+    margin-right: 5px;
+    width: 200px;
+  }
+  .featured-pic {
+    background: #fff;
+    position: relative;
+    img {
+      opacity: 1;
+      transition: opacity .3s;
+      -moz-transition: opacity .3s;
+      -o-transition: opacity .3s;
+      -webkit-transition: opacity .3s;
+    }
+    &:hover {
+      img {
+        opacity: 0.7;
+      }
+      > a {
+        visibility: visible;
+      }
+    }
+  }
+}

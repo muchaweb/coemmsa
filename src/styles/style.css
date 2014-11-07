@@ -1,0 +1,563 @@
+/**
+* ----------------------------------------------------------
+* Nied Style
+* ----------------------------------------------------------
+**/
+/**
+* ----------------------------------------------------------
+* Settings.
+* ----------------------------------------------------------
+**/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+/**
+* ----------------------------------------------------------
+* Utilities.
+* ----------------------------------------------------------
+**/
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.zero {
+  margin: 0;
+  padding: 0;
+}
+
+.list-nostyle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list-nostyle li {
+  list-style-type: none;
+  list-style-image: none;
+  margin-left: 0;
+}
+
+.img-responsive {
+  display: block;
+  width: 100% \9;
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+* ----------------------------------------------------------
+* Base styles.
+* ----------------------------------------------------------
+**/
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 24px;
+  color: #4d4d4d;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -240px;
+}
+#root #root__footer {
+  height: 240px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 240px;
+}
+
+a {
+  color: #2097a5;
+}
+a:visited {
+  color: #56b1bb;
+}
+a:hover {
+  color: #56b1bb;
+}
+a:active {
+  color: #56b1bb;
+}
+
+.icons-sprite, .icons-coemmsa-logo, .icons-design, .icons-download, .icons-phone, .icons-products, .icons-services, .icons-support {
+  background-image: url('../images/icons-sb0baef4b69.png');
+  background-repeat: no-repeat;
+}
+
+.icons-coemmsa-logo {
+  background-position: 0 0;
+}
+
+.icons-design {
+  background-position: 0 -176px;
+}
+.icons-design:hover, .icons-design.design-hover {
+  background-position: 0 -81px;
+}
+
+.icons-download {
+  background-position: 0 -271px;
+}
+
+.icons-phone {
+  background-position: 0 -343px;
+}
+
+.icons-products {
+  background-position: 0 -477px;
+}
+.icons-products:hover, .icons-products.products-hover {
+  background-position: 0 -382px;
+}
+
+.icons-services {
+  background-position: 0 -667px;
+}
+.icons-services:hover, .icons-services.services-hover {
+  background-position: 0 -572px;
+}
+
+.icons-support {
+  background-position: 0 -857px;
+}
+.icons-support:hover, .icons-support.support-hover {
+  background-position: 0 -762px;
+}
+
+/**
+* ----------------------------------------------------------
+* IE8 styles.
+* ----------------------------------------------------------
+**/
+/**
+* ----------------------------------------------------------
+* Navigation styles.
+* ----------------------------------------------------------
+**/
+#main-nav {
+  background-color: #eeeeee;
+  border: 1px solid #d5d5d5;
+  border-bottom: none;
+  padding: 0;
+  -moz-border-radius: 0.25em;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  text-align: justify;
+}
+
+.menuzord-brand,
+.menu {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.menuzord-brand {
+  border-bottom: 3px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+  color: #8f8f8f;
+  margin: 0;
+  padding: 0.23em 0;
+  text-align: center;
+  width: 5%;
+}
+a.menuzord-brand:hover, a.menuzord-brand.active {
+  border-bottom-color: #56b1bb;
+  color: #56b1bb;
+}
+
+.menu {
+  min-height: 40px;
+  text-align: justify;
+  width: 95%;
+}
+.menu > .menu__item {
+  border-bottom: 3px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+  display: block;
+  float: left;
+  line-height: 3em;
+  text-align: center;
+  width: 12.5%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: all, 0.33s;
+  -o-transition: all, 0.33s;
+  -webkit-transition: all, 0.33s;
+  transition: all, 0.33s;
+}
+.menu > .menu__item:hover, .menu > .menu__item.active {
+  border-bottom: 3px solid #56b1bb;
+  color: #d5d5d5;
+}
+.menu > .menu__item:hover > a, .menu > .menu__item.active > a {
+  color: #8f8f8f;
+}
+.menu > .menu__item.menu__item--last {
+  border-right: none;
+  line-height: 2.1em;
+  position: relative;
+  width: 25%;
+}
+.menu > .menu__item > a {
+  padding: 0;
+  position: relative;
+}
+.menu > .menu__item > a .indicator {
+  font-size: 20px;
+  margin-left: 0.5em;
+  position: relative;
+  top: 2px;
+}
+.menu ul.dropdown {
+  border: 1px solid #d5d5d5;
+  margin-top: 2px;
+}
+.menu ul.dropdown > .dropdown__item {
+  border-bottom: 1px solid #d5d5d5;
+  height: auto;
+  overflow: hidden;
+  text-align: left;
+}
+.menu ul.dropdown > .dropdown__item.dropdown__item--last {
+  border-bottom: 2px solid #d5d5d5;
+}
+.menu ul.dropdown > .dropdown__item > a {
+  font-size: 14.4px;
+  padding: 0 0 0 2em;
+}
+
+.site-search .site-search__input {
+  border: none;
+  color: #8f8f8f;
+  display: block;
+  font-size: 13px;
+  outline: none;
+  padding: 0.5em;
+  position: relative;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.site-search .site-search__submit {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0.5em;
+  top: 0.35em;
+}
+
+@media (max-width: 800px) {
+  #main-nav {
+    border-bottom: 3px solid #d5d5d5;
+    text-align: left;
+  }
+  #main-nav .menu {
+    border-top: 1px solid #d5d5d5;
+  }
+  #main-nav .menu > .menu__item {
+    display: inline-block;
+    float: none;
+    border-right: none;
+    width: 100%;
+    border-bottom-width: 1px;
+    text-align: left;
+  }
+  #main-nav .menu > .menu__item .indicator {
+    top: 0;
+    margin: 0;
+    width: 40px;
+    height: 34px;
+    line-height: 34px;
+    display: block;
+    float: right;
+    border-left: 1px solid #d5d5d5;
+  }
+  #main-nav .menu > .menu__item > a {
+    padding: 0 0 0 1.5em;
+    margin: 0;
+    line-height: 34px;
+    border-bottom: none;
+  }
+  #main-nav .menu > .menu__item .dropdown > .dropdown__item:first-child > a {
+    border-top: 1px solid #d5d5d5;
+  }
+  #main-nav .menu > .menu__item .dropdown > .dropdown__item > a {
+    padding-left: 2em;
+  }
+  #main-nav .showhide,
+  #main-nav .menuzord-brand {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 34px;
+    text-align: center;
+  }
+  #main-nav .menuzord-brand {
+    font-size: 24px;
+    line-height: 34px;
+    border-right: 1px solid #d5d5d5;
+    border-bottom-width: 0;
+  }
+  #main-nav .showhide {
+    border-left: 1px solid #d5d5d5;
+  }
+  #main-nav .showhide:hover > em {
+    background-color: #56b1bb;
+  }
+  #main-nav .showhide em {
+    display: block;
+    position: relative;
+    width: 20px;
+    margin: 3px auto;
+    vertical-align: middle;
+    line-height: 0px;
+    float: none;
+  }
+  #main-nav .showhide em:first-child {
+    margin-top: 10px;
+  }
+}
+/**
+* ----------------------------------------------------------
+* Header Styles
+* ----------------------------------------------------------
+**/
+#header .bottom-bar {
+  margin-top: 24px;
+}
+
+/**
+* ----------------------------------------------------------
+* Main styles
+* ----------------------------------------------------------
+**/
+.slider-section {
+  margin: 24px 0;
+}
+
+#width-slider {
+  background: #2097a5;
+  width: 100%;
+}
+#width-slider.rsMinW .rsOverflow, #width-slider.rsMinW .rsSlide, #width-slider.rsMinW .rsVideoFrameHolder, #width-slider.rsMinW .rsThumbs {
+  background: #2097a5;
+}
+
+.why-content {
+  margin: 24px 0;
+}
+
+.our-brands {
+  margin-bottom: 24px;
+}
+
+.everslider {
+  margin: 0;
+  padding: 0;
+}
+
+.featured-slider {
+  margin: 0;
+  padding: 0;
+}
+.featured-slider .es-navigation {
+  bottom: auto;
+  left: 0;
+  top: 0;
+}
+.featured-slider .es-navigation > a.es-prev,
+.featured-slider .es-navigation > a.es-next {
+  background: #2097a5;
+  color: white;
+  top: 0;
+  margin-top: 0;
+  text-align: center;
+}
+.featured-slider .es-navigation > a.es-prev span.alt-arrow,
+.featured-slider .es-navigation > a.es-next span.alt-arrow {
+  background: none;
+  font-size: 20px;
+  height: 1em;
+  line-height: 1em;
+  text-indent: 0;
+  width: 1em;
+  @inclue box-sizing(border-box);
+}
+.featured-slider .es-slides > li {
+  margin-right: 5px;
+  width: 200px;
+}
+.featured-slider .featured-pic {
+  background: #fff;
+  position: relative;
+}
+.featured-slider .featured-pic img {
+  opacity: 1;
+  transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+}
+.featured-slider .featured-pic:hover img {
+  opacity: 0.7;
+}
+.featured-slider .featured-pic:hover > a {
+  visibility: visible;
+}
+
+/**
+* ----------------------------------------------------------
+* Footer Styles
+* ----------------------------------------------------------
+**/
+#footer {
+  margin-top: 24px;
+}
+#footer .media {
+  margin-bottom: 24px;
+  text-align: center;
+}
+#footer .media .media__title {
+  border-bottom: 1px solid #d5d5d5;
+  color: #2097a5;
+  font-size: 16px;
+  margin: 0 0 1em 0;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+}
+#footer .media a {
+  color: #4d4d4d;
+}
+#footer .media .media__icon {
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+#footer ul.social {
+  text-align: center;
+  width: 100%;
+}
+#footer ul.social .social__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+#footer ul.social .social__link {
+  color: white;
+  display: block;
+  font-size: 18px;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 2em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#footer ul.social .social__link.social__link--facebook {
+  background: #3B5998;
+}
+#footer ul.social .social__link.social__link--google {
+  background: #DD4B39;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+#footer ul.social .social__link.social__link--linkedin {
+  background: #0977B5;
+}
+#footer .bottom-bar {
+  background: #2097a5;
+  padding: 1em 0;
+  text-align: center;
+}
+#footer .bottom-bar * {
+  color: white;
+  font-size: 12.8px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/**
+* ----------------------------------------------------------
+* Buttons styles.
+* ----------------------------------------------------------
+**/
+/**
+* ----------------------------------------------------------
+* Dividers.
+* ----------------------------------------------------------
+**/
+hr {
+  display: block;
+  height: 1px;
+  margin: 48px 0;
+  border: none;
+  background-color: #EEE;
+}
+
+/**
+* ----------------------------------------------------------
+* Forms styles.
+* ----------------------------------------------------------
+**/
+/**
+* ----------------------------------------------------------
+* Tables styles.
+* ----------------------------------------------------------
+**/
+/**
+* ----------------------------------------------------------
+* Miscelanea styles.
+* ----------------------------------------------------------
+**/
