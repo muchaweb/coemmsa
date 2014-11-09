@@ -17,5 +17,5 @@ a {
   @include link-colors($stormcloud, $stormcloud--light,$stormcloud--light, $stormcloud--light );
 }
 
-//@import "icons/*.png";
-//@include all-icons-sprites;
+@import "icons/*.png";
+@include all-icons-sprites;

@@ -8,6 +8,7 @@
 * Settings.
 * ----------------------------------------------------------
 **/
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 /**
 * ----------------------------------------------------------
 * Utilities.
@@ -129,6 +130,51 @@ a:active {
   color: #56b1bb;
 }
 
+.icons-sprite, .icons-coemmsa-logo, .icons-design, .icons-download, .icons-phone, .icons-products, .icons-services, .icons-support {
+  background-image: url('../images/icons-s1cbdd15864.png');
+  background-repeat: no-repeat;
+}
+
+.icons-coemmsa-logo {
+  background-position: 0 0;
+}
+
+.icons-design {
+  background-position: 0 -190px;
+}
+.icons-design:hover, .icons-design.design-hover {
+  background-position: 0 -65px;
+}
+
+.icons-download {
+  background-position: 0 -315px;
+}
+
+.icons-phone {
+  background-position: 0 -387px;
+}
+
+.icons-products {
+  background-position: 0 -551px;
+}
+.icons-products:hover, .icons-products.products-hover {
+  background-position: 0 -426px;
+}
+
+.icons-services {
+  background-position: 0 -801px;
+}
+.icons-services:hover, .icons-services.services-hover {
+  background-position: 0 -676px;
+}
+
+.icons-support {
+  background-position: 0 -1051px;
+}
+.icons-support:hover, .icons-support.support-hover {
+  background-position: 0 -926px;
+}
+
 /**
 * ----------------------------------------------------------
 * IE8 styles.
@@ -168,7 +214,7 @@ a.menuzord-brand {
   border-right: 1px solid #d5d5d5;
   color: #8f8f8f;
   margin: 0;
-  padding: 0.23em 0;
+  padding: 0.25em 0;
   text-align: center;
   width: 5%;
 }
@@ -341,6 +387,23 @@ a.menuzord-brand:hover, a.menuzord-brand.active {
   margin-top: 12px;
 }
 
+.brand {
+  margin: 1em 0;
+}
+.brand .brand__logo, .brand .brand__link {
+  display: block;
+  margin: 0;
+  width: 320px;
+  height: 65px;
+}
+.brand .brand__link {
+  background: transparent;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
 .callout .callout__icon,
 .callout .callout__number {
   display: inline-block;
@@ -390,8 +453,69 @@ a.menuzord-brand:hover, a.menuzord-brand.active {
   background: #2097a5;
 }
 
+.services .media {
+  text-align: center;
+}
+.services .media .media__icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.services .media .media__icon > span {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  background-color: #e6e6e6;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.services .media .media__icon > span:hover {
+  background-color: #2097a5;
+}
+.services .media .media__title {
+  font-size: 20px;
+  position: relative;
+  margin: 0.5em 0 1em 0;
+  padding: 0.5em 0;
+}
+.services .media .media__title:before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  background: #2097a5;
+}
+
 .why-content {
   margin: 24px 0;
+}
+.why-content .download-pdf {
+  display: block;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #d5d5d5;
+  text-decoration: none;
+}
+.why-content .download-pdf:hover {
+  text-decoration: none;
+}
+.why-content .download-pdf span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.why-content .download-pdf span.icons-download {
+  width: 72px;
+  height: 72px;
+}
+.why-content .download-pdf span.download-pdf__label {
+  text-transform: uppercase;
+  margin-left: 1em;
+  width: 50%;
+  font-size: 16px;
+  color: #4d4d4d;
 }
 
 .our-brands {

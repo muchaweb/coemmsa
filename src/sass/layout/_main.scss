@@ -18,8 +18,69 @@
   }
 }
 
+.services {
+  .media {
+    text-align: center;
+    .media__icon {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      > span {
+        display: inline-block;
+        width: 125px;
+        height: 125px;
+        background-color: darken($white, 5%);
+        @include border-radius(50%);
+        &:hover {
+          background-color: $stormcloud;
+        }
+      }
+    }
+    .media__title {
+      font-size: $base__font--size * 1.25;
+      position: relative;
+      margin: 0.5em 0 1em 0;
+      padding: 0.5em 0;
+      &:before {
+        content: "";
+        width: 50px;
+        height: 1px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -25px;
+        position: absolute;
+        background: $stormcloud;
+      }
+    }
+  }
+}
+
 .why-content {
   margin: $margin__general/2 0;
+  .download-pdf {
+    display: block;
+    padding-bottom: 1em;
+    border-bottom: 1px solid $gray--light;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      &.icons-download {
+        width: 72px;
+        height: 72px;
+      }
+      &.download-pdf__label {
+        text-transform: uppercase;
+        margin-left: 1em;
+        width: 50%;
+        font-size: $base__font--size;
+        color: $color__text;
+      }
+    }
+  }
 }
 
 .our-brands {

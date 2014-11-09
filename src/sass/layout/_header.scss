@@ -10,6 +10,23 @@
   }
 }
 
+
+.brand {
+  margin: 1em 0;
+  .brand__logo {
+    display: block;
+    margin: 0;
+    width: 320px;
+    height: 65px;
+  }
+  .brand__link {
+    @extend .brand__logo;
+    background: transparent;
+    @include hide-text;
+  }
+}
+
+
 .callout {
   .callout__icon,
   .callout__number {
