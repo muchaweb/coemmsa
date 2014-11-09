@@ -4,7 +4,7 @@
 * ----------------------------------------------------------
 **/
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+//@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 //* Typography */
 $base__font--size           : 16px;
@@ -16,7 +16,7 @@ $base__font--height         : $base__font--size * 1.5;
 //* Color scheme */
 $stormcloud                 : #2097a5;
 $stormcloud--light          : #56b1bb;
-$white                      : #eeeeee;
+$white                      : darken(white, 5%);
 $gray--dark                 : #8f8f8f;
 $gray--light                : #d5d5d5;
 

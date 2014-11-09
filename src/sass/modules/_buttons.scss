@@ -3,3 +3,37 @@
 * Buttons styles.
 * ----------------------------------------------------------
 **/
+
+.button-download {
+  display: inline-block;
+  background: $stormcloud--light;
+  border: 1px solid $stormcloud;
+  width: auto;
+  line-height: 1.5em;
+  color: white;
+  border-bottom-width: 3px;
+  margin: $margin__general/3 0;
+  @include border-radius(0.25em);
+  text-align: right;
+  &:hover {
+    text-decoration: none;
+    background: $stormcloud;
+    color: white;
+  }
+  .button-download__label,
+  .button-download__icon {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.5em 1em;
+  }
+  .button-download__label {
+    font-weight: bold;
+    font-size: $base__font--size;
+  }
+  .button-download__icon {
+    font-size: 20px;
+    height: 2em;
+    border-left: 1px solid $stormcloud;
+    margin-left: 0.5em;
+  }
+}

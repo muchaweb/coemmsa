@@ -6,6 +6,41 @@
 
 #header {
   .bottom-bar {
-    margin-top: $margin__general * 0.5;
+    margin-top: $margin__general/4;
+  }
+}
+
+.callout {
+  .callout__icon,
+  .callout__number {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .callout__icon {
+    color: $stormcloud;
+    font-size: 2.5em;
+    height: 2em;
+    line-height: 2em;
+    margin-right: 0.5em;
+  }
+  .callout__number {
+    span {
+      color: $gray--dark;
+      &:last-child {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+.social-counters {
+  width: 100%;
+  text-align: justify;
+  .social-counters__item {
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+  .social-counters__item--facebook {
+    position: relative;
+    top: -7px;
   }
 }

@@ -1,5 +1,6 @@
 (function() {
   (function($) {
+    var sidebarMenu, sidebarMenuActive;
     console.log('jQuery safely');
     $("#main-nav").menuzord({
       align: "left",
@@ -29,7 +30,7 @@
       imgWidth: 1200,
       imgHeight: 400
     });
-    $("#featured_slider").everslider({
+    $("#brands-carousel").everslider({
       mode: "circular",
       itemKeepRatio: false,
       pagination: false,
@@ -38,6 +39,11 @@
       keyboard: true,
       nextNav: '<span class="alt-arrow"><i class="fa fa-angle-right"></i></span>',
       prevNav: '<span class="alt-arrow"><i class="fa fa-angle-left"></i></span>'
+    });
+    sidebarMenu = $('ul.sidebar-menu');
+    sidebarMenuActive = sidebarMenu.find('li.active');
+    sidebarMenu.hover(function() {
+      return sidebarMenuActive.toggleClass("active");
     });
   })(jQuery);
 

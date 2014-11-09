@@ -5,10 +5,11 @@
 **/
 
 #main-nav {
-  background-color: $white;
   border: 1px solid $gray--light;
   border-bottom: none;
   padding: 0;
+  @include filter-gradient(white, $white, vertical);
+  @include background-image(linear-gradient( white , $white));
   @include border-radius(0.25em);
   text-align: justify;
 }
@@ -93,6 +94,7 @@ a.menuzord-brand {
 
 .site-search {
   .site-search__input {
+    background: transparent;
     border: none;
     color: $gray--dark;
     display: block;
