@@ -17,6 +17,9 @@ var config = {
   images : {
     src  : 'src/images/**/*',
     dest : 'build/images'
+  },
+  build : {
+    dest : 'build/'
   }
 }
 
@@ -77,11 +80,17 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('default', ['clean','webserver','watch'], function() {
+gulp.task('default', ['webserver','watch'], function() {
   gulp.start('styles', 'scripts');
 });
 
-gulp.task('build', ['clean'], function() {
+gulp.task('copy', function() {
+  gulp.src(config.sass.dest + '/style.css')
+    .pipe(plugins.minifycss(''))
+    .pipe(gulp.dest(config.build.dest + 'styles/'))
+});
+
+gulp.task('build', ['clean', 'copy'], function() {
   gulp.start('usemin', 'images');
 });
 

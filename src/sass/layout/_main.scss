@@ -297,4 +297,9 @@
   .media {
     margin-bottom: $margin__general/3;
   }
+  .related-products__title {
+    color: $stormcloud;
+    font-size: $base__font--size * 1.25;
+    margin: 0 0 $margin__general/2 0;
+  }
 }
